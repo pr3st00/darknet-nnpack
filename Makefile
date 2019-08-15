@@ -7,6 +7,7 @@ ARM_NEON=0
 OPENMP=0
 DEBUG=0
 QPU_GEMM=0
+RASPBERRY=1
 
 ARCH= -gencode arch=compute_30,code=sm_30 \
       -gencode arch=compute_35,code=sm_35 \
@@ -32,7 +33,15 @@ LDFLAGS= -lm -pthread
 COMMON= -Iinclude/ -Isrc/
 #CFLAGS=-Wall -Wno-unknown-pragmas -Wfatal-errors -fPIC
 #CFLAGS=-Wall -Wno-unknown-pragmas -Wfatal-errors -fPIC -march=native -mfpmath=sse
-CFLAGS=-Wall -Wno-unknown-pragmas -Wfatal-errors -fPIC -march=native
+CFLAGS=-Wall -Wno-unknown-pragmas -Wfatal-errors -fPIC 
+
+ifeq ($(RASPBERRY), 1)
+CFLAGS+= -mcpu=cortex-a53 -mfpu=neon-vfpv4
+endif
+
+ifeq ($(RASPBERRY), 0)
+CFLAGS+= -march=native
+endif
 
 ifeq ($(OPENMP), 1) 
 CFLAGS+= -fopenmp
