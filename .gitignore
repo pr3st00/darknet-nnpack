@@ -26,3 +26,6 @@ Icon?
 Thumbs.db
 *.swp
 libdarknet.*
+.installed
+follower
+Makefile.orig

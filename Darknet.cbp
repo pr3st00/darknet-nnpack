@@ -1,0 +1,4261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Darknet" />
+		<Option makefile_is_custom="1" />
+		<Option pch_mode="2" />
+		<Option default_target="Release" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="darknet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights" />
+				<Option host_application="darknet" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<MakeCommands>
+					<Build command="$make -f $makefile " />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile " />
+					<SilentBuild command="$make -f $makefile  &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Darknet" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="detector demo cfg/coco.data cfg/yolov3-tiny.cfg yolov3-tiny.weights" />
+				<Option host_application="darknet" />
+				<Option run_host_application_in_terminal="0" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<MakeCommands>
+					<Build command="$make -f $makefile" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile" />
+					<SilentBuild command="$make -f $makefile &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+			<Target title="Follower">
+				<Option output="follower" prefix_auto="1" extension_auto="1" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option parameters="cfg/yolov3-tiny.cfg yolov3-tiny.weights" />
+				<Option host_application="follower" />
+				<Option run_host_application_in_terminal="1" />
+				<MakeCommands>
+					<Build command="$make -f $makefile follower" />
+					<CompileFile command="$make -f $makefile $file" />
+					<Clean command="$make -f $makefile clean" />
+					<DistClean command="$make -f $makefile distclean$target" />
+					<AskRebuildNeeded command="$make -q -f $makefile follower" />
+					<SilentBuild command="$make -f $makefile follower &gt; $(CMD_NULL)" />
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="LICENSE">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LICENSE.fuck">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LICENSE.gen">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LICENSE.gpl">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LICENSE.meta">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LICENSE.mit">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="LICENSE.v1">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Makefile">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="Makefile.orig">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="README.md">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/alexnet.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/cifar.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/cifar.test.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/coco.data">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/combine9k.data">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/darknet.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/darknet19.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/darknet19_448.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/darknet9000.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/densenet201.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/extraction.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/extraction.conv.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/extraction22k.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/go.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/go.test.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/gru.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/imagenet1k.data">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/imagenet22k.dataset">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/imagenet9k.hierarchy.dataset">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/jnet-conv.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/resnet152.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/resnet50.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/rnn.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/rnn.train.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/strided.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/t1.test.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/tiny.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/vgg-16.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/vgg-conv.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/voc.data">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/writing.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolo9000.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov1-tiny.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov1.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov2-tiny-voc.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov2-tiny.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov2-voc.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov2.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov3-tiny-voc.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov3-tiny.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov3-voc.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="cfg/yolov3.cfg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="darknet">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/9k.labels">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/9k.names">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/9k.tree">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/coco.names">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/coco9k.map">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/dog.jpg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/eagle.jpg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/giraffe.jpg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/goal.txt">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/horses.jpg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/imagenet.labels.list">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/imagenet.shortnames.list">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/inet9k.map">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/100_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/101_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/102_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/103_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/104_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/105_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/106_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/107_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/108_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/109_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/110_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/111_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/112_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/113_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/114_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/115_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/116_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/117_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/118_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/119_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/120_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/121_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/122_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/123_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/124_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/125_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/126_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/32_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/33_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/34_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/35_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/36_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/37_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/38_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/39_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/40_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/41_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/42_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/43_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/44_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/45_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/46_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/47_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/48_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/49_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/50_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/51_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/52_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/53_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/54_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/55_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/56_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/57_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/58_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/59_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/60_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/61_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/62_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/63_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/64_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/65_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/66_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/67_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/68_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/69_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/70_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/71_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/72_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/73_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/74_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/75_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/76_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/77_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/78_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/79_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/80_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/81_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/82_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/83_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/84_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/85_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/86_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/87_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/88_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/89_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/90_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/91_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/92_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/93_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/94_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/95_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/96_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/97_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/98_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_0.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_1.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_2.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_3.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_4.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_5.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_6.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/99_7.png">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/labels/make_labels.py">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/person.jpg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/scream.jpg">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="data/voc.names">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/art.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/attention.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/captcha.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/cifar.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/classifier.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/coco.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/darknet.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/detector-scipy-opencv.py">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/detector.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/detector.py">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/dice.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/follower.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="examples/go.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/lsd.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/nightmare.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/regressor.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/rnn.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/rnn_vid.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/segmenter.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/super.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/swag.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/tag.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/voxel.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/writing.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="examples/yolo.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="include/darknet.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="libdarknet.a">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="libdarknet.so">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/activation_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/activations.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/art.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/avgpool_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/batchnorm_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/blas.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/box.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/captcha.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/cifar.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/classifier.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/coco.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/col2im.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/connected_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/convolutional_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/cost_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/crnn_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/crop_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/cuda.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/darknet.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/data.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/deconvolutional_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/demo.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/detection_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/detector.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/dropout_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/gemm.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/go.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/gru_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/im2col.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/image.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/l2norm_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/list.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/local_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/logistic_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/lsd.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/lstm_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/matrix.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/maxpool_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/network.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/nightmare.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/normalization_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/option_list.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/parser.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/region_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/regressor.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/reorg_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/rnn.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/rnn_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/route_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/segmenter.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/shortcut_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/softmax_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/super.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/tag.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/tree.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/upsample_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/utils.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/yolo.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="obj/yolo_layer.o">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="python/darknet.py">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="python/proverbot.py">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="scripts/dice_label.sh">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="scripts/gen_tactic.sh">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="scripts/get_coco_dataset.sh">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="scripts/imagenet_label.sh">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="scripts/voc_label.py">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/activation_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/activation_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/activation_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/activations.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/activations.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/avgpool_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/avgpool_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/avgpool_layer_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/batchnorm_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/batchnorm_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/blas.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/blas.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/blas_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/box.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/box.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/classifier.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/col2im.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/col2im.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/col2im_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/compare.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/connected_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/connected_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/convolutional_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/convolutional_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/convolutional_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/cost_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/cost_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/crnn_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/crnn_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/crop_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/crop_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/crop_layer_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/cuda.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/cuda.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/data.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/data.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/deconvolutional_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/deconvolutional_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/deconvolutional_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/demo.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/demo.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/detection_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/detection_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/dropout_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/dropout_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/dropout_layer_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/gemm.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/gemm.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/gru_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/gru_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/im2col.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/im2col.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/im2col_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/image.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/image.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/l2norm_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/l2norm_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/list.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/list.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/local_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/local_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/logistic_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/logistic_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/lstm_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/lstm_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/matrix.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/matrix.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/maxpool_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/maxpool_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/maxpool_layer_kernels.cu">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/network.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/network.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/normalization_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/normalization_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/option_list.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/option_list.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/parser.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/parser.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/region_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/region_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/reorg_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/reorg_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/rnn_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/rnn_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/route_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/route_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/shortcut_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/shortcut_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/softmax_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/softmax_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/stb_image.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/stb_image_write.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/tree.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/tree.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/upsample_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/upsample_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/utils.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/utils.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/yolo_layer.c">
+			<Option compilerVar="CC" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/yolo_layer.h">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="yolov3-tiny.weights">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="~">
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
